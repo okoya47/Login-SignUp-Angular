@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
+import ValidateForm from '../../Helpers/ValidateForm';
 
 @Component({
   selector: 'app-login',
@@ -16,8 +17,9 @@ loginForm!: FormGroup
 constructor(private formBuild: FormBuilder) {}
   ngOnInit(): void {
     this.loginForm = this.formBuild.group({
-        password:['', Validators.required],
-        username:['', Validators.required]
+        username:['', Validators.required],
+        password:['', Validators.required]
+        
     })
   }
 
@@ -29,10 +31,14 @@ hideShowPass(){
 }
 
 OnSubmit(){
-  if(this.loginForm.invalid){
+  debugger;
+  if(this.loginForm.valid){
     console.log(this.loginForm.value);
   }else{
     console.log("Form is not valid");
+    ValidateForm.validateAllFormFields(this.loginForm);
+    alert("Your form is fields invalid!");
   }
 }
+
 }
