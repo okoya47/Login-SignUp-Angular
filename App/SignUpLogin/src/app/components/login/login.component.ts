@@ -27,4 +27,12 @@ hideShowPass(){
   this.isText? this.type = "text" : this.type = "password";
 
 }
+
+OnSubmit(){
+  if(this.loginForm.invalid){
+    console.log(this.loginForm.value);
+  }else{
+    console.log("Form is not valid");
+  }
+}
 }

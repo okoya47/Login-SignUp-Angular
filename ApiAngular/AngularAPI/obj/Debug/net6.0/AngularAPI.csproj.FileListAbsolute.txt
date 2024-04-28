@@ -1,0 +1,65 @@
+E:\Angular\Login-SignUp-Angular\ApiAngular\AngularAPI\bin\Debug\net6.0\appsettings.Development.json
+E:\Angular\Login-SignUp-Angular\ApiAngular\AngularAPI\bin\Debug\net6.0\appsettings.json
+E:\Angular\Login-SignUp-Angular\ApiAngular\AngularAPI\bin\Debug\net6.0\AngularAPI.exe
+E:\Angular\Login-SignUp-Angular\ApiAngular\AngularAPI\bin\Debug\net6.0\AngularAPI.deps.json
+E:\Angular\Login-SignUp-Angular\ApiAngular\AngularAPI\bin\Debug\net6.0\AngularAPI.runtimeconfig.json
+E:\Angular\Login-SignUp-Angular\ApiAngular\AngularAPI\bin\Debug\net6.0\AngularAPI.dll
+E:\Angular\Login-SignUp-Angular\ApiAngular\AngularAPI\bin\Debug\net6.0\AngularAPI.pdb
+E:\Angular\Login-SignUp-Angular\ApiAngular\AngularAPI\bin\Debug\net6.0\Microsoft.OpenApi.dll
+E:\Angular\Login-SignUp-Angular\ApiAngular\AngularAPI\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
+E:\Angular\Login-SignUp-Angular\ApiAngular\AngularAPI\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+E:\Angular\Login-SignUp-Angular\ApiAngular\AngularAPI\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+E:\Angular\Login-SignUp-Angular\ApiAngular\AngularAPI\obj\Debug\net6.0\AngularAPI.csproj.AssemblyReference.cache
+E:\Angular\Login-SignUp-Angular\ApiAngular\AngularAPI\obj\Debug\net6.0\AngularAPI.GeneratedMSBuildEditorConfig.editorconfig
+E:\Angular\Login-SignUp-Angular\ApiAngular\AngularAPI\obj\Debug\net6.0\AngularAPI.AssemblyInfoInputs.cache
+E:\Angular\Login-SignUp-Angular\ApiAngular\AngularAPI\obj\Debug\net6.0\AngularAPI.AssemblyInfo.cs
+E:\Angular\Login-SignUp-Angular\ApiAngular\AngularAPI\obj\Debug\net6.0\AngularAPI.csproj.CoreCompileInputs.cache
+E:\Angular\Login-SignUp-Angular\ApiAngular\AngularAPI\obj\Debug\net6.0\AngularAPI.MvcApplicationPartsAssemblyInfo.cs
+E:\Angular\Login-SignUp-Angular\ApiAngular\AngularAPI\obj\Debug\net6.0\AngularAPI.MvcApplicationPartsAssemblyInfo.cache
+E:\Angular\Login-SignUp-Angular\ApiAngular\AngularAPI\obj\Debug\net6.0\staticwebassets.build.json
+E:\Angular\Login-SignUp-Angular\ApiAngular\AngularAPI\obj\Debug\net6.0\staticwebassets.development.json
+E:\Angular\Login-SignUp-Angular\ApiAngular\AngularAPI\obj\Debug\net6.0\staticwebassets\msbuild.AngularAPI.Microsoft.AspNetCore.StaticWebAssets.props
+E:\Angular\Login-SignUp-Angular\ApiAngular\AngularAPI\obj\Debug\net6.0\staticwebassets\msbuild.build.AngularAPI.props
+E:\Angular\Login-SignUp-Angular\ApiAngular\AngularAPI\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.AngularAPI.props
+E:\Angular\Login-SignUp-Angular\ApiAngular\AngularAPI\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.AngularAPI.props
+E:\Angular\Login-SignUp-Angular\ApiAngular\AngularAPI\obj\Debug\net6.0\staticwebassets.pack.json
+E:\Angular\Login-SignUp-Angular\ApiAngular\AngularAPI\obj\Debug\net6.0\scopedcss\bundle\AngularAPI.styles.css
+E:\Angular\Login-SignUp-Angular\ApiAngular\AngularAPI\obj\Debug\net6.0\AngularAPI.csproj.Up2Date
+E:\Angular\Login-SignUp-Angular\ApiAngular\AngularAPI\obj\Debug\net6.0\AngularAPI.dll
+E:\Angular\Login-SignUp-Angular\ApiAngular\AngularAPI\obj\Debug\net6.0\refint\AngularAPI.dll
+E:\Angular\Login-SignUp-Angular\ApiAngular\AngularAPI\obj\Debug\net6.0\AngularAPI.pdb
+E:\Angular\Login-SignUp-Angular\ApiAngular\AngularAPI\obj\Debug\net6.0\AngularAPI.genruntimeconfig.cache
+E:\Angular\Login-SignUp-Angular\ApiAngular\AngularAPI\obj\Debug\net6.0\ref\AngularAPI.dll
+E:\Application\Main app\Login-SignUp-Angular\ApiAngular\AngularAPI\bin\Debug\net6.0\appsettings.Development.json
+E:\Application\Main app\Login-SignUp-Angular\ApiAngular\AngularAPI\bin\Debug\net6.0\appsettings.json
+E:\Application\Main app\Login-SignUp-Angular\ApiAngular\AngularAPI\bin\Debug\net6.0\AngularAPI.exe
+E:\Application\Main app\Login-SignUp-Angular\ApiAngular\AngularAPI\bin\Debug\net6.0\AngularAPI.deps.json
+E:\Application\Main app\Login-SignUp-Angular\ApiAngular\AngularAPI\bin\Debug\net6.0\AngularAPI.runtimeconfig.json
+E:\Application\Main app\Login-SignUp-Angular\ApiAngular\AngularAPI\bin\Debug\net6.0\AngularAPI.dll
+E:\Application\Main app\Login-SignUp-Angular\ApiAngular\AngularAPI\bin\Debug\net6.0\AngularAPI.pdb
+E:\Application\Main app\Login-SignUp-Angular\ApiAngular\AngularAPI\bin\Debug\net6.0\Microsoft.OpenApi.dll
+E:\Application\Main app\Login-SignUp-Angular\ApiAngular\AngularAPI\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
+E:\Application\Main app\Login-SignUp-Angular\ApiAngular\AngularAPI\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+E:\Application\Main app\Login-SignUp-Angular\ApiAngular\AngularAPI\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+E:\Application\Main app\Login-SignUp-Angular\ApiAngular\AngularAPI\obj\Debug\net6.0\AngularAPI.csproj.AssemblyReference.cache
+E:\Application\Main app\Login-SignUp-Angular\ApiAngular\AngularAPI\obj\Debug\net6.0\AngularAPI.GeneratedMSBuildEditorConfig.editorconfig
+E:\Application\Main app\Login-SignUp-Angular\ApiAngular\AngularAPI\obj\Debug\net6.0\AngularAPI.AssemblyInfoInputs.cache
+E:\Application\Main app\Login-SignUp-Angular\ApiAngular\AngularAPI\obj\Debug\net6.0\AngularAPI.AssemblyInfo.cs
+E:\Application\Main app\Login-SignUp-Angular\ApiAngular\AngularAPI\obj\Debug\net6.0\AngularAPI.csproj.CoreCompileInputs.cache
+E:\Application\Main app\Login-SignUp-Angular\ApiAngular\AngularAPI\obj\Debug\net6.0\AngularAPI.MvcApplicationPartsAssemblyInfo.cs
+E:\Application\Main app\Login-SignUp-Angular\ApiAngular\AngularAPI\obj\Debug\net6.0\AngularAPI.MvcApplicationPartsAssemblyInfo.cache
+E:\Application\Main app\Login-SignUp-Angular\ApiAngular\AngularAPI\obj\Debug\net6.0\AngularAPI.sourcelink.json
+E:\Application\Main app\Login-SignUp-Angular\ApiAngular\AngularAPI\obj\Debug\net6.0\staticwebassets.build.json
+E:\Application\Main app\Login-SignUp-Angular\ApiAngular\AngularAPI\obj\Debug\net6.0\staticwebassets.development.json
+E:\Application\Main app\Login-SignUp-Angular\ApiAngular\AngularAPI\obj\Debug\net6.0\staticwebassets\msbuild.AngularAPI.Microsoft.AspNetCore.StaticWebAssets.props
+E:\Application\Main app\Login-SignUp-Angular\ApiAngular\AngularAPI\obj\Debug\net6.0\staticwebassets\msbuild.build.AngularAPI.props
+E:\Application\Main app\Login-SignUp-Angular\ApiAngular\AngularAPI\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.AngularAPI.props
+E:\Application\Main app\Login-SignUp-Angular\ApiAngular\AngularAPI\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.AngularAPI.props
+E:\Application\Main app\Login-SignUp-Angular\ApiAngular\AngularAPI\obj\Debug\net6.0\staticwebassets.pack.json
+E:\Application\Main app\Login-SignUp-Angular\ApiAngular\AngularAPI\obj\Debug\net6.0\scopedcss\bundle\AngularAPI.styles.css
+E:\Application\Main app\Login-SignUp-Angular\ApiAngular\AngularAPI\obj\Debug\net6.0\AngularAPI.csproj.Up2Date
+E:\Application\Main app\Login-SignUp-Angular\ApiAngular\AngularAPI\obj\Debug\net6.0\AngularAPI.dll
+E:\Application\Main app\Login-SignUp-Angular\ApiAngular\AngularAPI\obj\Debug\net6.0\refint\AngularAPI.dll
+E:\Application\Main app\Login-SignUp-Angular\ApiAngular\AngularAPI\obj\Debug\net6.0\AngularAPI.pdb
+E:\Application\Main app\Login-SignUp-Angular\ApiAngular\AngularAPI\obj\Debug\net6.0\AngularAPI.genruntimeconfig.cache
+E:\Application\Main app\Login-SignUp-Angular\ApiAngular\AngularAPI\obj\Debug\net6.0\ref\AngularAPI.dll
