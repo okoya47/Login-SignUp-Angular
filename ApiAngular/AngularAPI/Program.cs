@@ -11,7 +11,7 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddDbContext<AppDbContext>(options =>
 {
-    options.UseSqlServer(builder.Configuration.GetConnectionString("Server=localhost\\SQLEXPRESS;Database=master;Trusted_Connection=True;"));
+    options.UseSqlServer(builder.Configuration.GetConnectionString("ConnStrComand"));
 });
 var app = builder.Build();
 
