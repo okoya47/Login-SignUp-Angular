@@ -26,7 +26,7 @@
                 </div>
                 <small *ngIf="loginForm.controls['password'].dirty && loginForm.hasError('required', 'password')" class="text-danger">*Password is required</small>
               </div>
-              <button (click)="OnSubmit()" [disabled]="loginForm.invalid" type="submit" class="btn btn-primary btn-block">Login</button>
+              <button (click)="OnLogin()" type="submit" class="btn btn-primary btn-block">Login</button>
             </form>
           </div>
           <div class="card-footer">

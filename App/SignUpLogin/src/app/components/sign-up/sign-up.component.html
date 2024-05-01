@@ -7,41 +7,41 @@
             Create account
           </div>
           <div class="card-body">
-            <form [formGroup] = "loginForm">
+            <form [formGroup] = "signUpForm">
                 <div class="form-group">
                     <label for="Firstname">Firstname</label>
-                    <input type="text"  id="firstname" class="form-control" placeholder="Firstname" name="firstname">
-                    <small *ngIf="loginForm.controls['firstname'].dirty && loginForm.hasError('required', 'firstname')" class="text-danger">*Firstname is required</small>
+                    <input formControlName="firstname" type="text"  id="firstname" class="form-control" placeholder="Firstname" name="firstname">
+                    <small *ngIf="signUpForm.controls['firstname'].dirty && signUpForm.hasError('required', 'firstname')" class="text-danger">*Firstname is required</small>
                   </div>
                   <div class="form-group">
                     <label for="Lastname">Lastname</label>
-                    <input type="text"  id="lastname" class="form-control" placeholder="Lastname" name="lastname">
-                    <small *ngIf="loginForm.controls['lastname'].dirty && loginForm.hasError('required', 'lastname')" class="text-danger">*Lastname is required</small>
+                    <input formControlName="lastname" type="text"  id="lastname" class="form-control" placeholder="Lastname" name="lastname">
+                    <small *ngIf="signUpForm.controls['lastname'].dirty && signUpForm.hasError('required', 'lastname')" class="text-danger">*Lastname is required</small>
                   </div>
                   <div class="form-group">
                     <label for="Email">Email</label>
-                    <input type="text"  id="email" class="form-control" placeholder="Email" name="Email">
-                    <small *ngIf="loginForm.controls['username'].dirty && loginForm.hasError('required', 'email')" class="text-danger">*Email is required</small>
+                    <input formControlName="email" type="text"  id="email" class="form-control" placeholder="Email" name="email">
+                    <small *ngIf="signUpForm.controls['email'].dirty && signUpForm.hasError('required', 'email')" class="text-danger">*Email is required</small>
                   </div>
               <div class="form-group">
                 <label for="username">Username</label>
-                <input type="text"  id="username" class="form-control" placeholder="Username" name="username">
-                <small *ngIf="loginForm.controls['username'].dirty && loginForm.hasError('required', 'username')" class="text-danger">*Username is required</small>
+                <input formControlName="username" type="text"  id="username" class="form-control" placeholder="Username" name="username">
+                <small *ngIf="signUpForm.controls['username'].dirty && signUpForm.hasError('required', 'username')" class="text-danger">*Username is required</small>
               </div>
 
               <div class="form-group">
                 <label for="password">Password</label>
                 <div class="input-group">
-                  <input [type]="type"  id="password" class="form-control" placeholder="Password" name="password">
+                  <input formControlName="password" [type]="type"  id="password" class="form-control" placeholder="Password" name="password">
                   <div class="input-group-append">
                     <span class="input-group-text">
                       <i (click)="hideShowPass()" class="fa {{eyeIcon}}"></i>
                     </span>
                   </div>
                 </div>
-                <small *ngIf="loginForm.controls['Password'].dirty && loginForm.hasError('required', 'Password')" class="text-danger">*Password is required</small>
+                <small *ngIf="signUpForm.controls['password'].dirty && signUpForm.hasError('required', 'password')" class="text-danger">*Password is required</small>
               </div>
-              <button (click)="OnSubmit()" [disabled]="loginForm.invalid" type="submit" class="btn btn-primary btn-block">Sign Up</button>
+              <button (click)="signIn()"  type="submit" class="btn btn-primary btn-block">Sign Up</button>
             </form>
           </div>
           <div class="card-footer">
