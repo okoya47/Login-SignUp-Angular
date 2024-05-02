@@ -3,12 +3,16 @@
   "WorkspaceRootPath": "E:\\Application\\Main app\\Login-SignUp-Angular\\ApiAngular\\AngularAPI\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{519348D8-37A8-4F8B-A955-67579E4890E6}|AngularAPI.csproj|e:\\application\\main app\\login-signup-angular\\apiangular\\angularapi\\migrations\\20240501105645_v2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{519348D8-37A8-4F8B-A955-67579E4890E6}|AngularAPI.csproj|solutionrelative:migrations\\20240501105645_v2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{519348D8-37A8-4F8B-A955-67579E4890E6}|AngularAPI.csproj|e:\\application\\main app\\login-signup-angular\\apiangular\\angularapi\\helpers\\passwordhash.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{519348D8-37A8-4F8B-A955-67579E4890E6}|AngularAPI.csproj|solutionrelative:helpers\\passwordhash.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{519348D8-37A8-4F8B-A955-67579E4890E6}|AngularAPI.csproj|e:\\application\\main app\\login-signup-angular\\apiangular\\angularapi\\controllers\\users.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{519348D8-37A8-4F8B-A955-67579E4890E6}|AngularAPI.csproj|solutionrelative:controllers\\users.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{519348D8-37A8-4F8B-A955-67579E4890E6}|AngularAPI.csproj|e:\\application\\main app\\login-signup-angular\\apiangular\\angularapi\\migrations\\20240501105645_v2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{519348D8-37A8-4F8B-A955-67579E4890E6}|AngularAPI.csproj|solutionrelative:migrations\\20240501105645_v2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{519348D8-37A8-4F8B-A955-67579E4890E6}|AngularAPI.csproj|e:\\application\\main app\\login-signup-angular\\apiangular\\angularapi\\context\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -47,6 +51,19 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "PasswordHash.cs",
+              "DocumentMoniker": "E:\\Application\\Main app\\Login-SignUp-Angular\\ApiAngular\\AngularAPI\\Helpers\\PasswordHash.cs",
+              "RelativeDocumentMoniker": "Helpers\\PasswordHash.cs",
+              "ToolTip": "E:\\Application\\Main app\\Login-SignUp-Angular\\ApiAngular\\AngularAPI\\Helpers\\PasswordHash.cs",
+              "RelativeToolTip": "Helpers\\PasswordHash.cs",
+              "ViewState": "AQIAACkAAAAAAAAAAAAIwDMAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-01T11:44:36.409Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "20240501105645_v2.cs",
               "DocumentMoniker": "E:\\Application\\Main app\\Login-SignUp-Angular\\ApiAngular\\AngularAPI\\Migrations\\20240501105645_v2.cs",
               "RelativeDocumentMoniker": "Migrations\\20240501105645_v2.cs",
@@ -54,8 +71,7 @@
               "RelativeToolTip": "Migrations\\20240501105645_v2.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-01T10:56:46.98Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-01T10:56:46.98Z"
             },
             {
               "$type": "Document",
@@ -65,14 +81,14 @@
               "RelativeDocumentMoniker": "Controllers\\Users.cs",
               "ToolTip": "E:\\Application\\Main app\\Login-SignUp-Angular\\ApiAngular\\AngularAPI\\Controllers\\Users.cs",
               "RelativeToolTip": "Controllers\\Users.cs",
-              "ViewState": "AQIAAA8AAAAAAAAAAAAAwBUAAAAIAAAA",
+              "ViewState": "AQIAABsAAAAAAAAAAAAIwCwAAAAMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-29T19:47:53.908Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "20240429193435_v1.cs",
               "DocumentMoniker": "E:\\Application\\Main app\\Login-SignUp-Angular\\ApiAngular\\AngularAPI\\Migrations\\20240429193435_v1.cs",
               "RelativeDocumentMoniker": "Migrations\\20240429193435_v1.cs",
@@ -84,7 +100,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "appsettings.json",
               "DocumentMoniker": "E:\\Application\\Main app\\Login-SignUp-Angular\\ApiAngular\\AngularAPI\\appsettings.json",
               "RelativeDocumentMoniker": "appsettings.json",
@@ -96,7 +112,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "Program.cs",
               "DocumentMoniker": "E:\\Application\\Main app\\Login-SignUp-Angular\\ApiAngular\\AngularAPI\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
@@ -104,12 +120,11 @@
               "RelativeToolTip": "Program.cs",
               "ViewState": "AQIAAAYAAAAAAAAAAAAAABUAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-28T19:25:01.582Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-28T19:25:01.582Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "AppDbContext.cs",
               "DocumentMoniker": "E:\\Application\\Main app\\Login-SignUp-Angular\\ApiAngular\\AngularAPI\\Context\\AppDbContext.cs",
               "RelativeDocumentMoniker": "Context\\AppDbContext.cs",
@@ -117,12 +132,11 @@
               "RelativeToolTip": "Context\\AppDbContext.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAABFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-28T19:16:04.507Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-28T19:16:04.507Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "User.cs",
               "DocumentMoniker": "E:\\Application\\Main app\\Login-SignUp-Angular\\ApiAngular\\AngularAPI\\Models\\User.cs",
               "RelativeDocumentMoniker": "Models\\User.cs",
@@ -130,12 +144,11 @@
               "RelativeToolTip": "Models\\User.cs",
               "ViewState": "AQIAAAsAAAAAAAAAAAA9wA8AAAALAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-28T19:12:26.666Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-28T19:12:26.666Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "AngularAPI.csproj",
               "DocumentMoniker": "E:\\Application\\Main app\\Login-SignUp-Angular\\ApiAngular\\AngularAPI\\AngularAPI.csproj",
               "RelativeDocumentMoniker": "AngularAPI.csproj",

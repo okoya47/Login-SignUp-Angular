@@ -8,6 +8,7 @@ import { SignUpComponent } from './components/sign-up/sign-up.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { DashboardComponent } from './componets/dashboard/dashboard.component';
+import { NgToastModule } from 'ng-angular-popup';
 
 
 @NgModule({
@@ -21,7 +22,8 @@ import { DashboardComponent } from './componets/dashboard/dashboard.component';
     BrowserModule,
     AppRoutingModule, 
     ReactiveFormsModule,
-    HttpClientModule
+    HttpClientModule,
+    NgToastModule
   ],
   providers: [
     provideClientHydration()
