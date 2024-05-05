@@ -1,11 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "rrmIPaH1PHyxrvALbe+zNlL7sE9xuhNgdGrxqA9SdO6UOR3p/ZtjCaSSG6U25J4cz5p2H1aMha/dYnSfMuIfeg==",
+  "dgSpecHash": "VnhWCmx66NKNFkHNuHYkKWqjdDX8doOV+WAtH1B1RXxujN+cXDI5107eYhtelcJ60w9QWboseC9QSpwegdyNKg==",
   "success": true,
   "projectFilePath": "E:\\Application\\Main app\\Login-SignUp-Angular\\ApiAngular\\AngularAPI\\AngularAPI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Okoya\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
-    "C:\\Users\\Okoya\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\6.0.9\\microsoft.aspnetcore.authentication.jwtbearer.6.0.9.nupkg.sha512",
+    "C:\\Users\\Okoya\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\6.0.0\\microsoft.aspnetcore.authentication.jwtbearer.6.0.0.nupkg.sha512",
     "C:\\Users\\Okoya\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
     "C:\\Users\\Okoya\\.nuget\\packages\\microsoft.data.sqlclient\\2.1.4\\microsoft.data.sqlclient.2.1.4.nupkg.sha512",
     "C:\\Users\\Okoya\\.nuget\\packages\\microsoft.data.sqlclient.sni.runtime\\2.1.1\\microsoft.data.sqlclient.sni.runtime.2.1.1.nupkg.sha512",

@@ -1,4 +1,6 @@
-﻿using System.Text;
+﻿using System.IdentityModel.Tokens.Jwt;
+using System.Security.Claims;
+using System.Text;
 using System.Text.RegularExpressions;
 using AngularAPI.Context;
 using AngularAPI.Helpers;
@@ -6,6 +8,7 @@ using AngularAPI.Models;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.IdentityModel.Tokens;
 
 namespace AngularAPI.Controllers
 {
@@ -46,8 +49,9 @@ namespace AngularAPI.Controllers
             {
                 return NotFound(new { message = "Password is incorrect!" });
             }
+            userObj.token = CreateJwt(userCheck);
 
-            return Ok(new {message = "Login is successfull!"});
+            return Ok(new {Token=userObj.token, message = "Login is successfull!"});
         }
 
         [HttpPost("Register")]
@@ -100,6 +104,33 @@ namespace AngularAPI.Controllers
             if(!Regex.IsMatch(password, "[!,\\],\\[, <, >, @, \\,', ?]"))
                 sb.Append("The password should contain special characters");
             return sb.ToString();
+        }
+
+        private string CreateJwt(User useObj)
+        {
+            var jwtTokenHandler = new JwtSecurityTokenHandler();
+
+            var key = Encoding.UTF8.GetBytes("secret_bdaksbasbaksbajsbaa_asansasnalsnaksna");
+
+            var identity = new ClaimsIdentity(new Claim[]
+            {
+                new Claim(ClaimTypes.Role, useObj.role),
+                new Claim(ClaimTypes.Name, $"{useObj.firstname} {useObj.lastname}")
+            });
+
+            var credentials = new SigningCredentials(new SymmetricSecurityKey(key), SecurityAlgorithms.HmacSha256);
+
+            var tokenDescripter = new SecurityTokenDescriptor
+            {
+                Subject = identity,
+                Expires = DateTime.Now.AddDays(1),
+                SigningCredentials = credentials
+
+            };
+            var token = jwtTokenHandler.CreateToken(tokenDescripter);
+
+            return jwtTokenHandler.WriteToken(token);
+
         }
     }
 }
