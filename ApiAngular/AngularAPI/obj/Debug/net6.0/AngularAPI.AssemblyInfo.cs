@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("AngularAPI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c376d9cfaaa5400329e69e96175c39533f8bce96")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+bd21af4c071d8ef270983dfce4d487190d6f5121")]
 [assembly: System.Reflection.AssemblyProductAttribute("AngularAPI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("AngularAPI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

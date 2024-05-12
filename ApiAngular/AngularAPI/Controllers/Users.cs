@@ -5,6 +5,7 @@ using System.Text.RegularExpressions;
 using AngularAPI.Context;
 using AngularAPI.Helpers;
 using AngularAPI.Models;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
@@ -85,6 +86,13 @@ namespace AngularAPI.Controllers
             return Ok(new {message = "User added successfull!"});
         }
 
+        [Authorize]
+        [HttpGet("Users")]
+        public async Task<ActionResult<User>> getAllUsers()
+        {
+            return Ok(await _appDbContext.users.ToListAsync());
+        }
+
         private async Task<bool> CheckUserNameExistAsync(string userName)
         {
             return await _appDbContext.users.AnyAsync(x => x.username == userName);
@@ -123,7 +131,7 @@ namespace AngularAPI.Controllers
             var tokenDescripter = new SecurityTokenDescriptor
             {
                 Subject = identity,
-                Expires = DateTime.Now.AddDays(1),
+                Expires = DateTime.Now.AddSeconds(30),
                 SigningCredentials = credentials
 
             };

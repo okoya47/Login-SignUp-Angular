@@ -1,6 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Router } from '@angular/router';
+import { JwtHelperService } from '@auth0/angular-jwt';
 
 @Injectable({
   providedIn: 'root'
@@ -8,13 +9,19 @@ import { Router } from '@angular/router';
 export class AuthService {
 
   private pathUrl: string = "https://localhost:44311/api/Users/";
-  constructor(private http: HttpClient, private route: Router) { }
+
+  private userLoad: any;
+  constructor(private http: HttpClient, private route: Router) { 
+    this.userLoad = this.decodedToken();
+  }
 
   signUp(useObj:any){
+    debugger;
         return this.http.post<any>(`${this.pathUrl}Register`, useObj);
   }
 
   login(useObj:any){
+    debugger;
        return this.http.post<any>(`${this.pathUrl}Authenticate`, useObj);
   }
   loggingOut(){
@@ -26,10 +33,33 @@ export class AuthService {
   }
 
   getToken(){
-    localStorage.getItem("token");
+   return localStorage.getItem("token");
   }
 
   isLoggedIn(): boolean{
     return !!localStorage.getItem("token");
+  }
+
+  decodedToken(){
+    const jwtHelper = new JwtHelperService();
+
+    const token = this.getToken()!;
+
+    console.log(jwtHelper.decodeToken(token));
+
+    return jwtHelper.decodeToken(token);
+  }
+  
+  getUserFullNameFromPlayload(){
+    if(this.userLoad){
+      debugger;
+      return this.userLoad.name;
+    }
+  }
+
+  getUserRoleFromPlayload(){
+    if(this.userLoad){
+      return this.userLoad.role;
+    }
   }
 }

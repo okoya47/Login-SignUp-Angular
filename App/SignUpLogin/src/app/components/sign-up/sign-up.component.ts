@@ -38,13 +38,20 @@ signIn(){
   debugger;
   if(this.signUpForm.valid){
     console.log(this.signUpForm.value);
+    debugger;
     this.auth.signUp(this.signUpForm.value).subscribe({
+      
        next: (res)=>{
+        debugger;
         this.signUpForm.reset();
         this.router.navigate(['login']);
         alert(res.message);
        },
        error:(err)=>{
+
+        debugger;
+        alert("Hello");
+        alert(err);
         alert(err?.error.message)
        }
     })

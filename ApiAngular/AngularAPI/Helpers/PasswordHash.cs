@@ -34,7 +34,7 @@ namespace AngularAPI.Helpers
         {
             var hashBytes = Convert.FromBase64String(base64Hash);
 
-            byte[] salt = new byte[SaltSize];
+            var salt = new byte[SaltSize];
 
             Array.Copy(hashBytes,0 ,salt ,0 ,SaltSize);
 
@@ -44,8 +44,8 @@ namespace AngularAPI.Helpers
 
             for (int i = 0; i < HashSize; i++)
             {
-                if (hashBytes[i+SaltSize] == hash[i])
-                    return true;
+                if (hashBytes[i+SaltSize] != hash[i])
+                    return false;
             }
 
             return true;
