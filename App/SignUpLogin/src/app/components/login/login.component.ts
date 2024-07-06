@@ -5,6 +5,8 @@ import { AuthService } from '../../Services/auth.service';
 import { Router } from '@angular/router';
 import { NgToastService } from 'ng-angular-popup';
 import { UserStoreService } from '../../Services/user-store.service';
+import { ResetPasswordService } from '../../Services/reset-password.service';
+
 
 @Component({
   selector: 'app-login',
@@ -16,14 +18,17 @@ title: string ="This is the string";
 type:string = "password";
 isText: boolean = false;
 eyeIcon: string = "fa-eye-slash";
-loginForm!: FormGroup
+loginForm!: FormGroup;
+resetPasswordEmail!: string;
+isValidEmail!: boolean;
 
 constructor(
   private formBuild: FormBuilder,
   private auth: AuthService,
   private router: Router, 
   private Toast: NgToastService,
-  private userStore: UserStoreService
+  private userStore: UserStoreService,
+  private resetService : ResetPasswordService
  ) {}
   ngOnInit(): void {
     this.loginForm = this.formBuild.group({
@@ -32,6 +37,33 @@ constructor(
         
     })
   }
+checkEmailIsValid(event: string){
+  const value = event;
+  const pattrn = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/;
+  this.isValidEmail = pattrn.test(value);
+
+  return this.isValidEmail;
+
+}
+
+confirmSend(){
+  if(this.checkEmailIsValid(this.resetPasswordEmail)){
+    console.log(this.resetPasswordEmail);
+    
+  }
+  // API call goes here
+  this.resetService.sendResetPassword(this.resetPasswordEmail).subscribe({
+    next:(res)=>{
+      this.Toast.success({detail:"SUCCESS", summary:"Reset success", duration: 5000});
+      this.resetPasswordEmail = "";
+      const closeBu = document.getElementById("closebtn");
+      closeBu?.click();
+    },
+    error:(err)=>{
+      this.Toast.error({detail:"ERROR", summary:"Email is not sent!!", duration: 5000});
+    }
+  })
+}
 
 hideShowPass(){
   this.isText = !this.isText;
@@ -48,7 +80,8 @@ OnLogin(){
     
       next: (res)=>{
         this.loginForm.reset();
-        this.auth.storeToken(res.token);
+        this.auth.storeToken(res.accessToken);
+        this.auth.storeRefreshToken(res.refreshToken);
         let userToken = this.auth.decodedToken();
         this.userStore.setFirstNameForStoeName(userToken.name);
         this.userStore.setRoleForStoeName(userToken.role);

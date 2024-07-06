@@ -31,11 +31,14 @@
           </div>
           <div class="card-footer">
             <div class="d-flex justify-content-between">
-              <div>
-                <a href="#">Forgot password?</a>
-              </div>
+              
               <div>
                 <a routerLink="/signup">Sign up</a>
+              </div>
+
+              <div>
+             
+                <a id="forgot" data-bs-toggle="modal" data-bs-target="#exampleModal" class="font-weight-bold">Forgot password?</a>
               </div>
             </div>
             <div class="social-icons mt-3">
@@ -51,3 +54,30 @@
     </div>
   </div>
   
+
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+           <p class="modal-title" id="exampleModalLabel"><span style="font-size: 25px; font-weight: 700;">Forget your password!
+            <small>Please provide your E-mail we will send the reset link.</small>
+           </span></p>
+           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="model-body">
+          <div class="form-group pt-3">
+            <div class="input-field">
+              <span class="fa fa-user p-2"></span><input [(ngModel)]="resetPasswordEmail" (ngModelChange)="checkEmailIsValid($event)" type="text" placeholder="Email">
+            </div>
+            <small *ngIf="!resetPasswordEmail" class="text-danger">*Email is required</small>
+            <small *ngIf="resetPasswordEmail && !isValidEmail" class="text-danger">*Email is invalid</small>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button id="closebtn" type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" (click)="confirmSend()" class="btn btn-primary">Send</button>
+        </div>
+
+      </div>
+  </div>
+</div>

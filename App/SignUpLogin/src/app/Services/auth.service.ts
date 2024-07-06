@@ -2,6 +2,7 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Router } from '@angular/router';
 import { JwtHelperService } from '@auth0/angular-jwt';
+import { TokenModelApi } from '../models/token-api.model';
 
 @Injectable({
   providedIn: 'root'
@@ -32,6 +33,14 @@ export class AuthService {
     localStorage.setItem("token", tokenValue);
   }
 
+  storeRefreshToken(tokenValue: string){
+    localStorage.setItem("RefreshToken", tokenValue);
+  }
+
+  getRefreshToken(){
+    return localStorage.getItem("RefreshToken");
+   }
+
   getToken(){
    return localStorage.getItem("token");
   }
@@ -61,5 +70,10 @@ export class AuthService {
     if(this.userLoad){
       return this.userLoad.role;
     }
+  }
+
+  renewToken(tokenApi: TokenModelApi){
+    return this.http.post<any>(`${this.pathUrl}Refresh`, tokenApi)
+    
   }
 }

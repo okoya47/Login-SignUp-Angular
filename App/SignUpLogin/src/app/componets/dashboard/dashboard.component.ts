@@ -11,6 +11,7 @@ import { UserStoreService } from '../../Services/user-store.service';
 export class DashboardComponent implements OnInit {
 public users:any = [];
 public fullName: string = "";
+public role: string = "";
 constructor(private auth: AuthService, private api: ApiService, private userStore: UserStoreService){
 
 }
@@ -26,6 +27,11 @@ debugger;
       let FullNameFromPlayload= this.auth.getUserFullNameFromPlayload();
       this.fullName = val || FullNameFromPlayload
   });
+
+  this.userStore.getRoleFromStore().subscribe(val =>{
+    let RoleFromPlayload= this.auth.getUserRoleFromPlayload();
+    this.role = val || RoleFromPlayload
+});
   
 }
 logOut(){
